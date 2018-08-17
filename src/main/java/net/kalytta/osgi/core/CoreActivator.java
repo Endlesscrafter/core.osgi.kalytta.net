@@ -16,7 +16,7 @@ public class CoreActivator implements BundleActivator, ServiceListener {
             loggingService = (LoggingService) bundleContext.getService(refs[0]);
         }
         if(loggingService == null){
-            System.out.println("[Core] no Logging Service found!");
+            System.out.println("[Core] FATAL No Logging Service found!");
             throw new IllegalStateException();
         }
 
